@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -14,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-        Route::get('/', [HomeController::class, "__invoke"]);
+    Route::name('Site')->group(function(){
+   
+        Route::get('/', [HomeController::class, "index"])->name('/.index'); 
+        Route::get('user/{id}', [UserController::class, "show"])->name('user.show'); 
+    }); 
