@@ -8,14 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class LocalDestino extends Model
 {
     use HasFactory;
-    protected $fillable = ['nomelocal',
-    'cep',
-    'bairro',
-    'logradouro',
-    'localidade',
-    'uf',
-    'horario_funcionamento',
-    'dias_funcionamento',
-    'site_url',
-];
+    public $table ='destino_descarte';
+    public $primaryKey ='id_destino_descarte';
+    public $incrementing = true;
+    public $timestamps = false;
+   
 }

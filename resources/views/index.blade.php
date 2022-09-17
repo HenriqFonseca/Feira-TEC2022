@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1>Cadastrando Endereço</h1>
-        <form method="post" action="/insertlocaldestino">
+        <form method="POST" action="cadastro">
             @csrf
         <div class="form-group">
                 <label for="nome">Nome</label>
@@ -43,12 +43,12 @@
                 <small>Estado</small>
             </div>
             <div class="form-group">
-                <label for="localidade">Horário de Funcionamento</label>
+                <label for="horario">Horário de Funcionamento</label>
                 <input type="text" class="form-control" id="horario" name="horario" >
                 <small>Hora</small>
             </div>
             <div class="form-group">
-                <label for="localidade">Site</label>
+                <label for="url">Site</label>
                 <input type="text" class="form-control" id="url" name="url" >
                 <small>Endereço do Site</small>
             </div>
