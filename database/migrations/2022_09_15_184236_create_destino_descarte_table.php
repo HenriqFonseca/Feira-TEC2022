@@ -15,16 +15,15 @@ return new class extends Migration
     {
         Schema::create('destino_descarte', function (Blueprint $table) {
             $table->id('id_destino_descarte');
-            $table->timestamps();
-            $table->char('localdistrito_nome', 50);
-            $table->char('localsub_distrito_nome', 50);
-            $table->char('segmento_nome', 50);
-            $table->char('nome_destino', 50);
-            $table->char('horario_funcionamento',50);
-            $table->char('dias_funcionamento', 70);
-            $table->char('ultima_atualizacao' ,20);
-            $table->char('site_url' ,20);
-            $table->char('email', 20)->unique();
+            $table->char('nomelocal');
+            $table->char('cep', 9);
+            $table->char('bairro', 40);
+            $table->char('logradouro', 40);
+            $table->char('localidade', 40);
+            $table->char('uf', 10);
+            $table->char('horario_funcionamento',50)->nullable();
+            $table->char('dias_funcionamento', 70)->nullable();
+            $table->char('site_url' ,20)->nullable();
             
         });
     }

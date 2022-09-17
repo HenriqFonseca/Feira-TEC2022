@@ -4,6 +4,8 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Models\LocalDestino;
+use Illuminate\Support\Facades\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +21,23 @@ use Illuminate\Support\Facades\Route;
    
         Route::get('/', [HomeController::class, "index"])->name('/.index'); 
         Route::get('user/{id}', [UserController::class, "show"])->name('user.show'); 
+        //Route::get('insertlocaldestino', function(){
+        //    return view('index');
+        //});
+        Route::post('/insertlocaldestino', function(Request $request) {
+              
+            $localdestino = new LocalDestino;
+            $localdestino->nomelocal = $request ->nomelocal;
+            $localdestino->cep = $request ->cep;
+            $localdestino->bairro = $request->bairro;
+            $localdestino->logradouro = $request-> logradouro;
+            $localdestino->localidade = $request->localidade;
+            $localdestino->uf = $request-> uf;
+            $localdestino->horario_funcionamento = $request->horario;
+            $localdestino->dias_funcionamento = $request->dia;
+            $localdestino->site_url = $request->url;
+            $localdestino.save();
+            return redirect()->back()->with("sucess","Cadastro realizado com sucesso");
+
+        });
     }); 

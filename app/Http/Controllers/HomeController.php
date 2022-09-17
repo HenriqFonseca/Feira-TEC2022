@@ -15,6 +15,6 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        return view('site.home.index');
+        return view('index');
     }
 }
