@@ -7,7 +7,7 @@ use App\Models\LocalDestino;
 
 class destino_descarteController extends Controller
 {
-    public function pegarDados(Request $request){
+    public function pegarDados(Request $request){ //função para pegar os dados do formulário HTML
         $nomelocal = $request->input('nomelocal'); //$NomeDaVariável = $request->input('o que foi definindo no "name" do formulario HTML')
         $cep = $request->input('cep');
         $logradouro = $request->input('logradouro');
