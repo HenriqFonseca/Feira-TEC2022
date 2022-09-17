@@ -47,6 +47,7 @@
                 <input type="text" class="form-control" id="horario" name="horario" >
                 <small>Hora</small>
             </div>
+            <br>
             <div class="form-group">
                 <label for="url">Site</label>
                 <input type="text" class="form-control" id="url" name="url" >
