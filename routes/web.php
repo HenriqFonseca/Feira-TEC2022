@@ -1,11 +1,14 @@
 <?php
-use App\Http\Controllers\destino_descarteController;
-use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\FormController;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\EnderecosCadastradosController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Models\LocalDestino;
 use Illuminate\Support\Facades\Request;
+use function GuzzleHttp\Promise\all;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,30 +20,23 @@ use Illuminate\Support\Facades\Request;
 | contains the "web" middleware group. Now create something great!
 |
 */
-    Route::name('Site')->group(function(){
-   
-       // Route::get('/', [HomeController::class, "index"])->name('/.index'); 
-      //  Route::get('user/{id}', [UserController::class, "show"])->name('user.show'); 
-        //Route::get('insertlocaldestino', function(){
-        //    return view('index');
+      // Route::get('/enderecos-cadastrados/{$id_destino_descarte}', destino_descarteController::class, 'dadosEndereco');
+
+       // Route::get('enderecos-cadastrados/',  function(){
+       //   $LocalDestino = LocalDestino::all(0);
+        //  return view('enderecos-cadastrados', ['LocalDestino' => $LocalDestino]);
         //});
-      //  Route::post('/insertlocaldestino', function(Request $request) {
-              
-      //      $localdestino = new LocalDestino;
-      //      $localdestino->nomelocal = $request ->nomelocal;
-      //      $localdestino->cep = $request ->cep;
-      //      $localdestino->bairro = $request->bairro;
-      //      $localdestino->logradouro = $request-> logradouro;
-      //      $localdestino->localidade = $request->localidade;
-      //      $localdestino->uf = $request-> uf;
-      //      $localdestino->horario_funcionamento = $request->horario;
-      //      $localdestino->dias_funcionamento = $request->dia;
-      //      $localdestino->site_url = $request->url;
-      //      $localdestino.save();
-      //      return redirect()->back()->with("sucess","Cadastro realizado com sucesso");
 
-       // });
 
-        Route::post('cadastro', [destino_descarteController::class, 'pegarDados']);
-        Route::view('cadastro', 'index');
-    }); 
+        Route::post('/cadastro', [FormController::class, 'dadosEndereco']); //pegar dados do formulario
+
+        Route::get('/', [HomeController::class, 'home']);//rota para a home
+
+        Route::get('/enderecoscadastrados',[EnderecosCadastradosController::class , 'EnderecosCadastrados'])-> name('enderecoscadastrados');
+        //Route::get('/enderecoscadastrados/{id_destino_descarte}', [EnderecosCadastradosController::class], 'EnderecosCadastrado'); //rota para endereços cadastrados
+
+       // Route::get('enderecoscadastrados/{id_destino_descarte}', function($id_destino_descarte){ //rota para endereços cadastrados
+       //   $LocalDestino = LocalDestino::findOrFail($id_destino_descarte);
+       //   echo "$LocalDestino->nomelocal";
+        //  //return view('enderecoscadastrados', ['LocalDestino' => $LocalDestino]);
+       // })-> name('enderecoscadastrados');

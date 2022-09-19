@@ -13,14 +13,7 @@
 </head>
 <body>
     <div class="container">
-        <script> alert("Local cadastrado com sucesso!!!!!!");/</script>
-        <div class="title-cad">
-        <h1 id="index-h1">Cadastrando Endereço</h1>
-            <div class="box-a">
-                <a href="{{ route ('enderecoscadastrados')}}"><h1 id="index-h1">Endereços Cadastrados</h1></a>
-            </div>
-        </div>
-            
+        <h1>Cadastrando Endereço</h1>
         <form method="POST" action="cadastro">
             @csrf
         <div class="form-group">
@@ -70,7 +63,7 @@
                 <input type="text" class="form-control" id="url" name="url" >
                 <small>Endereço do Site</small>
             </div>
-            <button class="btn btn-primary" id="button" type="submit">Enviar</button>
+            <button class="btn btn-primary" type="submit">Enviar</button>
         </form>
     </div>
 

@@ -1,0 +1,55 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+accordion-item ,h2{
+    font-size: 60px;
+    color: black;
+}
+.container-accordion{
+    width: 55%;
+    margin: auto;
+}
+#title{
+    font-size: 80px;
+    text-align: center;
+    margin: auto;
+    top: 30px;
+}
+
+.title-box{
+    padding-top: 30px;
+    width: 55%;
+    margin: auto;
+    font-size: 80px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: solid 2px black;
+}
+.box-lista{
+    font-size: 20px;
+    list-style: none;
+}
+.title-box , h1{
+    font-size: 80px;
+    top: 30px;
+}
+
+/* PÁGINA INDEX*/
+.title-cad{
+    padding-top: 30px;
+}
+.title-cad ,h1,a{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+
+}
+.box-a{
+    border: solid 2px black;
+    border-radius: 5px;
+}
