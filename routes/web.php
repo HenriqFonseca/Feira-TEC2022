@@ -30,7 +30,7 @@ use function GuzzleHttp\Promise\all;
 
         Route::post('/cadastro', [FormController::class, 'dadosEndereco']); //pegar dados do formulario
 
-        Route::get('/', [HomeController::class, 'home']);//rota para a home
+        Route::get('/', [HomeController::class, 'home'])->name('index');//rota para a home
 
         Route::get('/enderecoscadastrados',[EnderecosCadastradosController::class , 'EnderecosCadastrados'])-> name('enderecoscadastrados');
         //Route::get('/enderecoscadastrados/{id_destino_descarte}', [EnderecosCadastradosController::class], 'EnderecosCadastrado'); //rota para endereços cadastrados

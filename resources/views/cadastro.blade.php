@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="bootstrap.rtl.min.css">
-    <link href="style.css" rel="stylesheet">
-    <!-- link rel="manifest" href="/manifest.json" -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-</head>
-<body>
+@extends('layouts.default')
+
+@section('conteudo')
     <div class="container">
         <h1>Cadastrando Endereço</h1>
         <form method="POST" action="cadastro">
@@ -67,20 +56,5 @@
         </form>
     </div>
 
-
-    <script>
-         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker
-                .register('/sw.js')
-                .then(serviceWorker => {
-                    console.log('Service Worker registered: ' + serviceWorker);
-                })
-                .catch(error => {
-                    console.log('Error registering the Service Worker: ' + error);
-                });
-        }
-    </script>
-    </script>
-    <script src="main.js"></script>
-</body>
+@endsection
 </html>

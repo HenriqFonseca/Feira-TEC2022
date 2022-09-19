@@ -4,26 +4,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-accordion-item ,h2{
-    font-size: 60px;
-    color: black;
+
+/*Página enderecos cadastrados*/
+.accordion-item{
+    width: 100%;
 }
+
+
 .container-accordion{
-    width: 55%;
     margin: auto;
-}
-#title{
-    font-size: 80px;
-    text-align: center;
-    margin: auto;
-    top: 30px;
+    max-width: 1320px;
+    width: 100%;
 }
 
 .title-box{
-    padding-top: 30px;
-    width: 55%;
+    width: 100%;
+    max-width: 1320px;
     margin: auto;
-    font-size: 80px;
+    margin-bottom: 30px;
     text-decoration: none;
     text-align: center;
     border-bottom: solid 2px black;
@@ -32,24 +30,60 @@ accordion-item ,h2{
     font-size: 20px;
     list-style: none;
 }
+.box-lista p {
+    font-size: 20px;
+}
 .title-box , h1{
-    font-size: 80px;
-    top: 30px;
+    font-size: 45px;
+}
+
+/* NAV*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #dfdfdf;
+    height: 9vh;
+    border-bottom: solid 2px grey ;
+    margin-bottom: 50px;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-list li{
+    letter-spacing: 1px;
+    margin-left: 32px;
+    }
+
+a{
+    transition: 0.3s;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+a:hover{
+    opacity: 0.7;
+    color: grey;
+}
+
+.logo img{
+    width: 160px;
+    height: 80px;
 }
 
 /* PÁGINA INDEX*/
-.title-cad{
-    padding-top: 30px;
-}
-.title-cad ,h1,a{
-    font-size: 40px;
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    color: black;
 
-}
 .box-a{
     border: solid 2px black;
     border-radius: 5px;
+}
+
+.container{
+    margin: auto;
+    max-width: 1320px;
+    width: 100%;
 }
