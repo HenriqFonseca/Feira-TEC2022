@@ -26,5 +26,8 @@
         </nav>
     </header>
     @yield('conteudo')
+    <script src="main.js"></script>
+ 
+
 </body>
 </html>
