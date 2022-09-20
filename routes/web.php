@@ -28,6 +28,7 @@ use function GuzzleHttp\Promise\all;
         //});
 
 
+
         Route::post('/cadastro', [FormController::class, 'dadosEndereco']); //pegar dados do formulario
 
         Route::get('/', [HomeController::class, 'home'])->name('index');//rota para a home

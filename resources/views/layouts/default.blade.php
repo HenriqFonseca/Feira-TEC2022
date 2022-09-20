@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <a class="logo" href="{{ route ('index')}}"><img src="img/logo.png" alt="logo"></a>
+            <a class="logo" href="{{ route ('index') }}"><img src="img/logo.png" alt="logo"></a>
             <ul class="nav-list">
                 <li>
                     <a  href="{{ route ('index')}}">Cadastrar Endereço</a>
