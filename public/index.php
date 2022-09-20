@@ -2,6 +2,7 @@
 
 use function PHPUnit\Framework\once;
 
+include once("index.blade.php");
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 
