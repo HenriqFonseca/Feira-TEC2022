@@ -25,6 +25,9 @@ cep.addEventListener("blur",(e)=>{
     })
     .catch(e => console.log('Deu Erro: '+ e,message))
 })
+
+
+
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js', {scope: '/js/'})
     .then(function(reg) {

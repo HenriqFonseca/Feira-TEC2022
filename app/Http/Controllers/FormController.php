@@ -8,7 +8,7 @@ use App\Models\LocalDestino;
 class FormController extends Controller
 {
     public function dadosEndereco(Request $dadosEndereco){ //função para pegar os dados do formulário HTML
-
+        
         $nomelocal = $dadosEndereco->input('nomelocal'); //$NomeDaVariável = $dadosEndereco->input('o que foi definindo no "name" do formulario HTML')
         $cep = $dadosEndereco->input('cep');
         $logradouro = $dadosEndereco->input('logradouro');
