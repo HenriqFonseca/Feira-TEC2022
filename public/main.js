@@ -27,7 +27,7 @@ cep.addEventListener("blur",(e)=>{
 })
 
 
-
+/*
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js', {scope: '/js/'})
     .then(function(reg) {
@@ -37,4 +37,14 @@ if ('serviceWorker' in navigator) {
       // registration failed
       console.log('Registration failed with ' + error);
     });
+  }
+*/
+
+  window.onload = () => {
+    'use strict';
+  
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('./sw.js');
+    }
   }
