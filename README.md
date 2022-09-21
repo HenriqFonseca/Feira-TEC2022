@@ -1,64 +1,23 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1 align="center"> Projeto: 3°DS </h1>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
-## About Laravel
+<h1>Resumo</h1>
+  
+  <p> Muito se discute sobre os avanços tecnológicos no cenário mundial, que é um crescimento exponencial, e sempre está em mudanças. Com esse constante avanço não se pode esquecer dos demais assuntos, como por exemplo o meio ambiente. Tendo em mente essa desatenção com a natureza e o crescente ritmo tecnológico, a criação de um Website para nosso projeto de Feira de tecnolgica da ETEC Zona Leste, envolvendo esses dois pontos foi bem clara e necessária, vendo a forma que o descarte de lixo é feito em nosso país, falta de pontos de descartes ou até mesmo falta de informações sobre os já existentes.</p>
+  <p> Pode-se mencionar, por exemplo, o Índice de reciclagem no Brasil que é de apenas 4%, segundo a Abrelpe (Associação Brasileira de Empresas de Limpeza Pública e Resíduos Especiais). A falta de reciclagem adequada no nosso país gera uma perca econômica significativa, em 2019 essa perda foi de aproximadamente 14 bilhões de reais, grande parte deste problema poderia ser resolvido com a conscientização da população, por meio de comunicados por exemplo, comerciais em horários nobres, informativos em blogs, e com o  retorno positivo da população, o governo poderia gerar algo em troca para os cidadãos.</p>
+  <p> Dentre os inúmeros motivos que levaram o nosso projeto a existir, nossa principal meta é fazer com o que o meio ambiente acompanha a evolução da tecnologia. O problema de pontos de descartes e a falta de informação sobre os mesmos, foi algo que resolvemos utilizando o conhecimento adquirido no decorrer do nosso curso, que foi a criação de um Website onde mostra os locais de descarte e os materiais que cada ponto de coleta recicla, e o fluxo de materiais com maior ranking de reciclagem teria mais pontos de coletas. Como é o caso latas de aço, segundo a Prolata (associação sem fins lucrativos criada pela cadeia de valor dos fabricantes de latas de aço) que reciclou mais de 17 mil toneladas de latas de aço como citado acima. Utilizamos o aprendizado do curso de desenvolvimento de sistemas da ETEC zona leste neste projeto, e foi usado o framework Lavarel, Heroku, MYsql, HTML e PHP.</p>
+  <p> Em vista dos argumentos apresentados, é imprescindível que todos se conscientizem e se sensibilizem de que nosso projeto é uma visão visionaria e consciente. Não se trata apenas de um Website para a feira de ciências e sim, fazer a diferença no mundo com a iniciativa de conscientização na hora de separar o lixo. Esse projeto abre as portas para maior investimento na área, tanto ecológica quanto tecnológica, elevando o Brasil em diversos rankings.</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ✔️ Técnicas e tecnologias utilizadas
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- ``Lavarel``
+- ``HTML``
+- ``PHP``
+- ``HEROKU``
+- ``MYSQL``
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| [<img src="https://avatars.githubusercontent.com/u/88805304?v=4" width=115><br><sub>Antonio William </sub>](https://github.com/AntonioWilliam) |
+| :---: |
