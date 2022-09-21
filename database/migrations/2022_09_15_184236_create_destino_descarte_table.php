@@ -17,9 +17,9 @@ return new class extends Migration
             $table->id('id_destino_descarte');
             $table->char('nomelocal');
             $table->char('cep', 9);
-            $table->char('bairro', 40);
-            $table->char('logradouro', 40);
-            $table->char('localidade', 40);
+            $table->char('bairro', 200);
+            $table->char('logradouro', 200);
+            $table->char('localidade', 200);
             $table->char('uf', 10);
             $table->char('horario_funcionamento',50)->nullable();
             $table->char('dias_funcionamento', 70)->nullable();
